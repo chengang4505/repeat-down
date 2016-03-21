@@ -28,10 +28,5 @@
   "license": "ISC",
   "dependencies": {
     "mkdirp": "^0.5.1"
-  },
-  "devDependencies": {
-    "download": "^4.4.3",
-    "multi-progress": "^1.0.0",
-    "progress": "^1.1.8"
   }
 }
