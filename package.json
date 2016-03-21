@@ -1,0 +1,37 @@
+{
+  "name": "repeat-down",
+  "version": "1.0.0",
+  "description": "downloading files and try again some times in a bad network environment.",
+  "main": "index.js",
+  "keywords": [
+    "download",
+    "net",
+    "break-point",
+    "repeat",
+    "multi-task"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chengang4505/repeat-down.git"
+  },
+  "homepage": "https://github.com/chengang4505/repeat-down",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "maintainers": [
+    {
+      "name": "chengang",
+      "email": "450518634@qq.com"
+    }
+  ],
+  "author": "chen gang",
+  "license": "ISC",
+  "dependencies": {
+    "mkdirp": "^0.5.1"
+  },
+  "devDependencies": {
+    "download": "^4.4.3",
+    "multi-progress": "^1.0.0",
+    "progress": "^1.1.8"
+  }
+}
