@@ -1,6 +1,8 @@
 # repeat-down
 multi-tasking download files and support  continue transferring from breakpoint  repeattly.
 
+    npm install repeat-down
+
 ##example
 
 ```javascript
