@@ -42,3 +42,21 @@ multi-tasking download files and support  continue transferring from breakpoint 
         
     });
 ```
+
+#methods
+
+###RepeatDown(option)
+
+```javascript
+    var RepeatDown = require('repeat-down');
+    var downloader = new RepeatDown({maxRun: 6, timeout: 5000, repeatNum: 4});
+```
+
+create a downloader.
+```option``` a obj with some propertys.
+
+```timeout``` the connection timeout ,default 5000(milliscond).
+```maxRun``` the max running tasks ,default 5.
+```repeatNum``` max auto repeat times if a task failed ,default 10.
+```delayTime``` a increasing time for every repeat ,default 500(milliscond).
+
