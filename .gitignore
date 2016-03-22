@@ -1,0 +1,5 @@
+/.idea
+/node_modules
+/temp
+./.gitignore
+test1.js

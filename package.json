@@ -16,7 +16,7 @@
   },
   "homepage": "https://github.com/chengang4505/repeat-down",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test.js"
   },
   "maintainers": [
     {
@@ -28,5 +28,8 @@
   "license": "ISC",
   "dependencies": {
     "mkdirp": "^0.5.1"
+  },
+  "devDependencies": {
+    "multi-progress": "^1.0.0"
   }
 }
