@@ -103,7 +103,7 @@ task has some propertys below:
 ```timeout``` [number] connection timeout.<br>
 ```url``` [string] quest url.<br>
 ```dest``` [string]filepath.<br>
-```curChunk ``` [obj] a chunk obj.
+```curChunk ``` [obj] a chunk obj.<br>
 ```_isBreak``` [boolean] whether if surpport breakpoint resume for the task.<br>
 ```process``` [number]a percent of  the process.<br>
 ```reclen```  [number] current received length. ```start+reclen``` is the total received length.<br>
