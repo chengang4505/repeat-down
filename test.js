@@ -13,8 +13,13 @@ for (var i = 0; i < 20; i++) {
     });
 }
 down.get(arr);
+down.run(taskProcess,doneForEveryTask ,doneAllTasks );
 
 
+
+
+var repeat = 0;
+var bars = {};
 
 //title progress
 var multi = new Multiprogress(process.stderr);
@@ -24,28 +29,6 @@ var title = multi.newBar('total info:(runningTask)|:num1 (waitedTask)|:num2 (err
     width: 30,
     total: 100000
 });
-
-
-
-function getBar(schema) {
-    var bar = multi.newBar(schema, {
-        complete: '=',
-        incomplete: ' ',
-        width: 30,
-        total: 100
-    });
-    bar.per = 0;
-    bar.code = '';
-    return bar;
-}
-
-
-
-var repeat = 0;
-var bars = {};
-down.run(taskProcess,doneForEveryTask ,doneAllTasks );
-
-
 //percent callback
 function taskProcess(percent, task){
     var dest = task.dest;
@@ -86,3 +69,14 @@ setInterval(function () {
     });
 }, 300);
 
+function getBar(schema) {
+    var bar = multi.newBar(schema, {
+        complete: '=',
+        incomplete: ' ',
+        width: 30,
+        total: 100
+    });
+    bar.per = 0;
+    bar.code = '';
+    return bar;
+}
